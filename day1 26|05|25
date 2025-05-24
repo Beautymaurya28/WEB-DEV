@@ -1,0 +1,15 @@
+# React + Tailwind Setup – Web Dev Monday by Nova
+
+This project is part of my Supernova Placement Journey,
+specifically for Monday's Web Development schedule. The main goal of this session was to set up a solid React project using Vite, 
+integrate Tailwind CSS, and organize the folder structure for scalable development.
+
+## What I Did
+
+### 1. React Project Setup with Vite
+I created the project using Vite for faster development and better performance.
+
+Command used:
+```bash
+npm create vite@latest
+  
