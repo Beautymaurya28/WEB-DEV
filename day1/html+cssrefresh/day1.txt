@@ -1,0 +1,71 @@
+1. HTML + CSS REFRESH
+   A.Semantic tags:
+     meaningful structure. Browser and screen readers understand the content better
+     
+     1.<header> = top of the page/section
+     2.<nav>   = navigation link(navbar)
+     3.<main>= main content
+     4. section> = logical section
+     5. <article> =independent content
+     6. <aside>= Sidebar stuff
+     7. <footer>= bottom info
+
+     Q.why important:
+     =>seo boost,accessibility, and clean structure. Nova-level pro stuff
+
+        B.Box model :
+        every HTML element is a box.
+
+        Margin(outside space)
+           |
+        Border(line around the box)
+           |
+        Padding(Space inside the border)
+            |
+        Content(text/image/etc)
+
+[Note: Use (box-sizing: border-box) to make layout easier. Total size includes padding and border].
+
+        C. Flexbox Layout:
+        flexbox= 1D layout system(row or column)
+
+        .parent{
+            display:flex; /*Activate flex container*/
+            flex-direction: row/column /*Horizontal pr vertical flow*/
+            justify-content:center; /*x-axis*/
+            align-items: center; /*y-axis*/
+            gap: 10px; /*space between items
+            flex-wrap:wrap; /*allow wrapping*/
+        }
+   
+        D. Responsive grid:
+        2D layout like chessboard
+
+        .container{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:1rem;
+        }
+
+        @media(max-width:768px){
+            .container{
+                grid-template-columns:1fr;
+            }
+        }
+
+
+   E. Folder structure:
+        supernova-webdev/
+├── public/
+│   └── index.html
+├── src/
+│   ├── style.css
+│   ├── components/
+│   ├── projects/
+│   └── assets/
+     
+     =Keep images in /assets, reusable code in /components, and project files in /projects.
+
+
+
+
